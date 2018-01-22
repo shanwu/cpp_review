@@ -15,6 +15,7 @@ int main(int argc, char** argv) {
     if(argc != 2)
     {
         std::cout << "Please enter string value" << std::endl;
+        return -1;
     }
     
     std::cout<< "origin: "<< argv[1] <<" --> "<<Solution::reverseString(argv[1])<< std::endl;
