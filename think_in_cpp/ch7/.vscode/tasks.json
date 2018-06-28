@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Stash3",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "output",
+                "Stash3.cpp",
+                "Stash3_main.cpp"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Stash3",
+            "type": "shell",
+            "command": "./output",
+            "problemMatcher": []
+        },
+        {
+            "label": "clear task",
+            "type": "shell",
+            "command": "rm output",
+            "problemMatcher": []
+        }
+    ]
+}
